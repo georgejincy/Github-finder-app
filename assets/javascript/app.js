@@ -39,8 +39,11 @@ $(document).ready(function(){
 									<span class="label label-default">Forks: ${repo.forks_count}</span>
 									<span class="label label-primary">Watchers: ${repo.watchers_count}</span>
 									<span class="label label-success">Stars: ${repo.stargazers_count}</span>
+
 								</div>
-								<div class = "col-md-2"></div>
+								<div class = "col-md-2">
+										<a href = "${repo.html_url}" target = "_blank" class = "btn btn-default">Repo page</a>
+								</div>
 								</div>
 							</div>
 						`);
