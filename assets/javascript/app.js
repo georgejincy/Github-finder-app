@@ -12,9 +12,7 @@ $(document).ready(function(){
 			url: "https://api.github.com/users/" + userName,
 			data:{
 				client_id: '46e9a037672cca81d3da',
-				client_secret: '2ed4aaa00b415311599d0038b59533f08a05f838',
-				sort: 'creates: asc',
-				per_page: 5
+				client_secret: '2ed4aaa00b415311599d0038b59533f08a05f838'
 			}
 			//.done is the returned promise which handles the callback function which passes the data
 		}).done(function(user){
@@ -23,7 +21,9 @@ $(document).ready(function(){
 				url: "https://api.github.com/users/" + userName + "/repos",
 				data:{
 				client_id: '46e9a037672cca81d3da',
-				client_secret: '2ed4aaa00b415311599d0038b59533f08a05f838'
+				client_secret: '2ed4aaa00b415311599d0038b59533f08a05f838',
+				sort: 'creates: asc',
+				per_page: 5
 				}
 
 			}).done(function(repos){
